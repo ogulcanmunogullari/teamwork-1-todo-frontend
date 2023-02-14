@@ -1,4 +1,4 @@
-<h1>teamwork-1-todo-frontend</h1>
+<h1>1) Todo List</h1>
 <p>This project is our first project as a team.
 </p>
 <hr>

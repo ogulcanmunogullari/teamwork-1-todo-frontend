@@ -12,9 +12,9 @@ export const TodoContainer = ({ todosData, themeIsLight }: Props) => {
     <div
       className={`${
         themeIsLight
-          ? 'bg-light-background border-light-border'
-          : 'bg-dark-background border-dark-border'
-      } max-w-[640px] p-5 mx-auto border`}>
+          ? 'bg-light-background border-light-border sm:shadow-lg sm:shadow-light-border'
+          : 'bg-dark-background border-dark-border sm:shadow-lg sm:shadow-dark-background'
+      } max-w-[640px] p-3 sm:p-5 mx-auto border overflow-hidden`}>
       <TodoInput themeIsLight={themeIsLight} />
       {todosData.map((todo) => {
         return (

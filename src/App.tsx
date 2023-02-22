@@ -44,16 +44,17 @@ const Root = () => {
     dispatch(changeTheme());
   }, [checked]);
   return (
-    <>
-      <nav
-        className={`container mx-auto flex justify-between items-center ${
-          themeIsLight
-            ? 'bg-light-input-background'
-            : 'bg-dark-input-background'
-        }`}>
+    <div
+      className={`${
+        themeIsLight ? 'bg-light-input-background' : 'bg-dark-input-background'
+      } h-[100dvh] overflow-hidden`}>
+      <nav className={`container mx-auto flex justify-between items-center `}>
         <Link to="/">Signin</Link>
         <Link to="/signup">Signup</Link>
         <Link to="/todopage">Todo Page</Link>
+        <Link to="https://github.com/ogulcanmunogullari/teamwork-1-todo-frontend">
+          Github
+        </Link>
         <Checkbox
           icon={<Icon className="text-dark-text">light_mode</Icon>}
           checkedIcon={<Icon className="text-light-text">dark_mode</Icon>}
@@ -63,6 +64,6 @@ const Root = () => {
         />
       </nav>
       <Outlet />
-    </>
+    </div>
   );
 };

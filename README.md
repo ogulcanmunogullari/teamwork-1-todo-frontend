@@ -1,4 +1,5 @@
-<h1>1) Todo List</h1>
+<h1>1) Todo List </h1>
+<br/>
 <p>This project is our first project as a team.
 </p>
 <hr>
